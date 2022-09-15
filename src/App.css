@@ -37,7 +37,40 @@
   }
 }
 
+.article-card {
+  border: 2px solid purple;
+}
+
 .title {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+}
+
+.card-image {
+  height: 422px;
+  object-fit: cover;
+}
+
+.news-list {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.article-card-title {
+  font-weight: 500;
+  font-size: 24px;
+  height: 58px;
+}
+
+.article-card-text,
+.article-card-text-link {
+  font-size: 14px;
+  height: 84px;
+}
+
+.article-card-text-link {
+  color: fuchsia;
+}
+
+.card-footer {
+  height: 50px;
 }

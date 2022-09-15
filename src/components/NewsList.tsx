@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Article } from "../Models/Article";
+import SingleArticle from "./SingleArticle";
 
 const NewsList = () => {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -26,11 +27,11 @@ const NewsList = () => {
   };
 
   return (
-    <Container>
+    <Container className="news-list">
       <Row>
         {articles.map((article) => (
-          <Col lg={6}>
-            <h2>{article.title}</h2>
+          <Col key={article.id} lg={6}>
+            <SingleArticle article={article} />
           </Col>
         ))}
       </Row>
