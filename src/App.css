@@ -74,3 +74,11 @@
 .card-footer {
   height: 50px;
 }
+
+.button-go-home {
+  background-color: fuchsia;
+}
+
+.button-go-home:hover {
+  background-color: purple!important;
+}

@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import NewsList from "./components/NewsList";
+import ArticleDetails from "./components/ArticleDetails";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<NewsList />} />
+          <Route path="/:id" element={<ArticleDetails />} />
         </Routes>
       </div>
     </BrowserRouter>
