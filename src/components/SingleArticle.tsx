@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Article } from "../Models/Article";
 
 interface SingleArticleProps {
@@ -7,8 +7,10 @@ interface SingleArticleProps {
 }
 
 const SingleArticle = ({ article }: SingleArticleProps) => {
+  const navigate = useNavigate();
+
   return (
-    <Card className="article-card bg-dark mb-4">
+    <Card className="article-card bg-dark mb-4 pointer" onClick={() => {navigate('/' + article.id)}}>
       <Card.Img className="card-image" variant="top" src={article.imageUrl} />
       <Card.Body>
         <Card.Title className="article-card-title">{article.title}</Card.Title>

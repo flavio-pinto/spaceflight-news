@@ -82,3 +82,7 @@
 .button-go-home:hover {
   background-color: purple!important;
 }
+
+.pointer {
+  cursor: pointer;
+}
